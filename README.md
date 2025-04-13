@@ -14,11 +14,11 @@
 
 ### POST:
     - Ajouter un nouvel étudiant: ```http://localhost:8080/students```` 
-exemple de contenu à mettre dans le body: { "prenom": "Axel", "nom": "D", "email": "axel-d@zzz.cd", "age": 20 }
+    exemple de contenu à mettre dans le body: { "prenom": "Axel", "nom": "D", "email": "axel-d@zzz.cd", "age": 20 }
     - Ajouter un nouveau cour: ```http://localhost:8080/courses````
-exemple de contenu à mettre dans le body: { "nameCours": "Java", "nameProf": "Mr Java" }
+    exemple de contenu à mettre dans le body: { "nameCours": "Java", "nameProf": "Mr Java" }
     - Ajouter une nouvelle note: ```http://localhost:8080/grades````
-exemple de contenu à mettre dans le body: { "studentId": "1", "coursId": "2", "value": 20 }
+    exemple de contenu à mettre dans le body: { "studentId": "1", "coursId": "2", "value": 20 }
 
 ### PUT:
     - Modifier les informations d'un étudiant: ```http://localhost:8080/students/{id_etudiant}````
