@@ -23,28 +23,28 @@ Récupérer la moyenne des notes d'un étudiant:  ```http://localhost:8080/repor
 ### POST:
 Ajouter un nouvel étudiant: ```http://localhost:8080/students```
 
-exemple de contenu à mettre dans le body: { "prenom": "Axel", "nom": "D", "email": "axel-d@zzz.cd", "age": 20 }
+exemple de contenu à mettre dans le body: ```{ "prenom": "Axel", "nom": "D", "email": "axel-d@zzz.cd", "age": 20 }```
 
 Ajouter un nouveau cour: ```http://localhost:8080/courses```
 
-exemple de contenu à mettre dans le body: { "nameCours": "Java", "nameProf": "Mr Java" }
+exemple de contenu à mettre dans le body: ```{ "nameCours": "Java", "nameProf": "Mr Java" }```
 
 Ajouter une nouvelle note: ```http://localhost:8080/grades```
 
-exemple de contenu à mettre dans le body: { "studentId": "1", "coursId": "2", "value": 20 }
+exemple de contenu à mettre dans le body: ```{ "studentId": "1", "coursId": "2", "value": 20 }```
 
 ### PUT:
 Modifier les informations d'un étudiant: ```http://localhost:8080/students/{id_etudiant}```
 
-exemple de contenu à mettre dans le body: { "prenom": "Baptiste", "nom": "Mathon" }
+exemple de contenu à mettre dans le body: ```{ "prenom": "Baptiste", "nom": "Mathon" }```
 
 Modifier un cours: ```http://localhost:8080/courses/{id_cour}```
 
-exemple de conetnu à mettre dans le body: { "nameCours": "Math 2" }
+exemple de conetnu à mettre dans le body: ```{ "nameCours": "Math 2" }```
 
 Modifier une note: ```http://localhost:8080/grades/{id_note}```
 
-exemple de contenu à mettre dans le body: { "value": 18 }
+exemple de contenu à mettre dans le body: ```{ "value": 18 }```
 
 
 ### DELETE:
