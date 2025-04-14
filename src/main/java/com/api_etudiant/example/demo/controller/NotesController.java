@@ -18,12 +18,12 @@ public class NotesController {
     private NotesServices notesServices;
 
     @GetMapping("/student/{studentId}")
-    public ResponseEntity<List<Notes>> getNotesByStudent(@PathVariable Long studentId) {
+    public ResponseEntity<List<Double>> getNotesByStudent(@PathVariable Long studentId) {
         return ResponseEntity.ok(notesServices.getNotesByStudent(studentId));
     }
 
     @GetMapping("/cours/{coursId}")
-    public ResponseEntity<List<Notes>> getNotesByCours(@PathVariable Long coursId) {
+    public ResponseEntity<List<Double>> getNotesByCours(@PathVariable Long coursId) {
         return ResponseEntity.ok(notesServices.getNotesByCours(coursId));
     }
 

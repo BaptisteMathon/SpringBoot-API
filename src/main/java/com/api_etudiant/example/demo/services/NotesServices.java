@@ -9,6 +9,7 @@ import com.api_etudiant.example.demo.repository.NotesRepository;
 import com.api_etudiant.example.demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -49,11 +50,22 @@ public class NotesServices {
         notesRepository.deleteById(id);
     }
 
-    public List<Notes> getNotesByStudent(Long studentId){
-        return notesRepository.findByStudentId(studentId);
+    public List<Double> getNotesByStudent(Long studentId){
+        List <Notes> notes = notesRepository.findByStudentId(studentId);
+        List <Double> notesValues = new ArrayList<>();
+        for (Notes note : notes) {
+            notesValues.add(note.getNote());
+        }
+        return notesValues;
     }
 
-    public List<Notes> getNotesByCours(Long coursId){
-        return notesRepository.findByCoursId(coursId);
+    public List<Double> getNotesByCours(Long coursId){
+        // return notesRepository.findByCoursId(coursId);
+        List <Notes> notes = notesRepository.findByCoursId(coursId);
+        List <Double> notesValues = new ArrayList<>();
+        for (Notes note : notes) {
+            notesValues.add(note.getNote());
+        }
+        return notesValues;
     }
 }
