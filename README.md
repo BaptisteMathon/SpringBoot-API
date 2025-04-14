@@ -4,6 +4,8 @@ Bonjour Pierre, voici mon projet API étudiant SpringBoot!
 
 La base de donnée SQL doit tourner sur le port par défaut (3306), et le schéma de la base de donnée doit être le suivant:
 
+<img width="215" alt="Capture d’écran 2025-04-14 à 19 29 05" src="https://github.com/user-attachments/assets/91c8602b-acf7-491b-b693-517d2d25855f" />
+
 Pour démarrer le projet il faut faire les commandes suivantes:
 
 ```
