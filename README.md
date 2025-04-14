@@ -1,6 +1,10 @@
 # SpringBoot-API
 
-## Endpoints API:
+Bonjour Pierre, voici mon projet API étudiant SpringBoot!
+
+La base de donnée SQL doit tourner sur le port par défaut (3306), et le schéma de la base de donnée doit être le suivant:
+
+## Les différents endpoints permettant de communiquer avec l'API:
 
 ### GET:
 Récupérer tous les étudiants:  ```http://localhost:8080/students```
