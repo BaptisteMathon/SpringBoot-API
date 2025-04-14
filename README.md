@@ -4,21 +4,37 @@
 
 ### GET:
 Récupérer tous les étudiants: 
+
 ```http://localhost:8080/students```
+
 Récupérer un étudiant selon son id: 
+
 ```http://localhost:8080/students/{id_etudiant}```
+
 Récupérer tous les cours: 
+
 ```http://localhost:8080/courses```
+
 Récupérer un cours selon son id: 
+
 ```http://localhost:8080/courses/{id_cours}```
+
 Récupérer les notes d'un étudiant: 
+
 ```http://localhost:8080/grades/student/{id_etudiant}```
+
 Récupérer les cours d'un étudiant: 
+
 ```http://localhost:8080/grades/cours/{id_cours}```
+
 Récupérer la moyenne des notes d'un cours: 
+
 ```http://localhost:8080/reports/course/{id_cours}```
+
 Récupérer la moyenne des notes d'un étudiant: 
+
 ```http://localhost:8080/reports/student/{id_etudiant}```
+
 
 ### POST:
     - Ajouter un nouvel étudiant: ```http://localhost:8080/students```` 
